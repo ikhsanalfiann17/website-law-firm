@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Law Firm Aneng Winengsih & Partners</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <img
+          src="img/logo-from-figma.png"
+          alt="Logo Kantor Hukum"
+          style="width: 40px; vertical-align: middle; margin-right: 10px"
+        />
+        Law Firm<span> Aneng Winengsih & Partners</span>
+      </a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="menubar"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Beranda Section start -->
+    <section id="home" class="home">
+      <div class="home-content">
+        <h1>
+          Selamat Datang di <br /><span
+            >Law Firm Aneng Winengsih & Partners</span
+          >
+        </h1>
+        <p></p>
+        <a href="#layanan" class="btn">Layanan Kami</a>
+      </div>
+    </section>
+    <!-- Beranda Section end -->
+
+    <!-- Tentang Kami Section start -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Tentang Kami</h2>
+        <div class="lawyer-info" style="display: flex; align-items: center">
+          <div class="lawyer-photo" style="flex: 0">
+            <img
+              src="img/lawyer1.png"
+              alt="Pengacara Aneng Winengsih"
+              style="width: 250px; border-radius: 50%"
+            />
+          </div>
+          <div
+            class="lawyer-details"
+            style="flex: 1; padding-left: 20px; text-align: left"
+          >
+            <h3>Aneng Winengsih, S.H.</h3>
+            <p>Founder & Senior Lawyer</p>
+            <p></p>
+            <p>
+              Aneng Winengsih adalah pengacara berpengalaman dengan spesialisasi
+              dalam penyelesaian sengketa, hukum keluarga, dan pendampingan
+              litigasi. Beliau telah menangani berbagai kasus kompleks dengan
+              hasil yang memuaskan bagi kliennya.
+            </p>
+          </div>
+        </div>
+
+    <!-- Foto Penghargaan Pengacara -->
+    <h3>Penghargaan</h3>
+    <div class="container">
+      <div class="awards-slider">
+        <div class="awards-slides">
+          <img src="img/sertifikat1.jpeg" alt="Penghargaan 1" />
+          <img src="img/sertifikat2.jpg" alt="Penghargaan 2" />
+          <img src="img/sertifikat3.jpg" alt="Penghargaan 3" />
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </div>
+
+
+
+
+        <!-- Foto Penghargaan Pengacara -->
+        <h3>Penghargaan</h3>
+        <div class="container">
+        <div class="awards" style="display: flex; gap: 20px; margin-top: 20px">
+          <img
+            src="img/sertifikat1.jpeg"
+            alt="Penghargaan 1"
+            style="width: 150px; height: auto; border-radius: 10px"
+          />
+          <img
+            src="img/sertifikat1.jpeg"
+            alt="Penghargaan 2"
+            style="width: 150px; height: auto; border-radius: 10px"
+          />
+          <img
+            src="img/sertifikat1.jpeg"
+            alt="Penghargaan 3"
+            style="width: 150px; height: auto; border-radius: 10px"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Tentang Kami Section end -->
+
+    <!-- Layanan Section start -->
+    <section id="layanan" class="layanan">
+      <div class="container">
+        <h2>Layanan Kami</h2>
+        <ul>
+          <li>
+            <img
+              src="img/consulting.jpg"
+              alt="Konsultasi Hukum"
+              style="width: 250px; border-radius: 5%"
+            />Konsultasi Hukum
+          </li>
+          <li>
+            <img
+              src="img/consulting.jpg"
+              alt="Pendampingan Hukum"
+              style="width: 250px; border-radius: 5%"
+            />Pendampingan Hukum
+          </li>
+          <li>
+            <img
+              src="img/consulting.jpg"
+              alt="Penyelesaian Sengketa"
+              style="width: 250px; border-radius: 5%"
+            />Penyelesaian Sengketa
+          </li>
+          <li>
+            <img
+              src="img/consulting.jpg"
+              alt="Pengurusan Perizinan"
+              style="width: 250px; border-radius: 5%"
+            />Pengurusan Perizinan
+          </li>
+          <li>
+            <img
+              src="img/consulting.jpg"
+              alt="Penyusunan Dokumen Hukum"
+              style="width: 250px; border-radius: 5%"
+            />Penyusunan Dokumen Hukum
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Layanan Section end -->
+
+    <!-- Kontak Section start -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Kontak Kami</h2>
+        <p>
+          Jika Anda membutuhkan bantuan hukum, jangan ragu untuk menghubungi
+          kami:
+        </p>
+        <ul>
+          <li></li>
+          <li>
+            <a href="#" id="phone"><i data-feather="phone"></i></a>
+            0896-3232-3222
+          </li>
+          <li>
+            <a href="#" id="mail"><i data-feather="mail"></i></a>
+            Kantorhukumaw@gmail.com
+          </li>
+          <li>
+            <a href="#" id="map-pin"><i data-feather="map-pin"></i></a>
+            Jl. Kapten Piere Tandean, Blok Cicadas No.96, Dangdeur, Kec. Subang,
+            Kabupaten Subang, Jawa Barat
+          </li>
+        </ul>
+        <form>
+          <input type="text" placeholder="Nama" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Pesan" required></textarea>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Kontak Section end -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Your Website | Designed by Ikhsan Alfiansyah</p>
+      </div>
+    </footer>
+
+    <!-- Font Awesome for Icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Link to JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

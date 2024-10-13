@@ -1,0 +1,420 @@
+:root {
+  --primary: #206ebc; /* Biru utama */
+  --bg: #ffffff; /* Latar belakang putih */
+  --secondary: #ffa200; /* Biru muda sebagai warna sekunder */
+  --light-bg: #f4f4f4; /* Latar belakang abu-abu terang */
+  --btn-hover: #01294d; /* Biru gelap untuk efek hover tombol */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #232323;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(30, 63, 96, 0.929); /* Transparan dengan biru */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--secondary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--secondary);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#menubar {
+  display: none;
+}
+
+/* Home Section */
+.home {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/bg2.jpg") no-repeat center/cover; /* Menambahkan background foto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.home h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.home h1 span {
+  color: var(--secondary);
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #fff;
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.home .btn {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home .btn:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Tentang Kami */
+.about {
+  padding: 5rem 7%;
+  background-color: var(--light-bg);
+  color: #333;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.about-img {
+  max-width: 200px;
+  margin: 1rem 0;
+}
+
+/* Layanan */
+.layanan {
+  padding: 5rem 7%;
+  background-color: var(--bg);
+}
+
+.layanan h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.layanan ul {
+  list-style-type: none;
+}
+
+.layanan ul li {
+  font-size: 1.1rem;
+  padding: 1rem;
+  background-color: #fff;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.layanan ul li:hover {
+  transform: scale(1.02); /* Efek hover */
+}
+
+.layanan ul li img {
+  width: 40px;
+  margin-right: 1rem;
+}
+
+/* Kontak */
+.contact {
+  padding: 5rem 7%;
+  background-color: var(--light-bg);
+  color: #333;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.contact p {
+  margin-bottom: 2rem;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact ul li {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.contact form {
+  margin-top: 2rem;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: var(--btn-hover);
+}
+
+.content {
+  padding: 20px;
+  min-height: 80vh;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel img {
+  width: 300px;
+  height: 200px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.awards-slider {
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.awards-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.awards-slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menubar {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #243e4ef7;
+    width: 22rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

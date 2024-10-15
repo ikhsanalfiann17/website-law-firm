@@ -82,7 +82,7 @@ body {
 .home {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/bg2.jpg") no-repeat center/cover; /* Menambahkan background foto */
+    url("../img/bg3.jpg") no-repeat center/cover; /* Menambahkan background foto */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@ body {
 .home h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #ffffff;
   line-height: 1.2;
 }
 
@@ -364,14 +364,14 @@ footer {
 
 /* Media Queries */
 
-/* Laptop */
+/* Laptop 
 @media (max-width: 1366px) {
   html {
     font-size: 75%;
   }
 }
 
-/* Tablet */
+/* Tablet 
 @media (max-width: 758px) {
   html {
     font-size: 62.5%;
@@ -412,9 +412,156 @@ footer {
   }
 }
 
-/* Mobile Phone */
+/* Mobile Phone 
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+}
+
+
+
+/* Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 60px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  background-color: #1abc9c;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-content button:hover {
+  background-color: #16a085;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Laptop (layar lebih kecil dari 1366px) */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%; /* Mengurangi ukuran font untuk layar laptop */
+  }
+}
+
+/* Tablet (layar lebih kecil dari 768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%; /* 1rem = 10px untuk kemudahan perhitungan */
+  }
+
+  /* Menampilkan menu bar secara vertikal */
+  #menubar {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #243e4ef7;
+    width: 22rem;
+    height: 100vh;
+    transition: right 0.3s ease-in-out; /* Transisi yang lebih halus */
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem; /* Ukuran font lebih besar untuk kemudahan membaca */
+    text-align: left;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+
+/* Mobile Phone (layar lebih kecil dari 450px) */
+@media (max-width: 480px) {
+  html {
+    background-size: cover; /* Tetap gunakan 'cover' agar gambar menutupi layar */
+    background-attachment: scroll; /* Pastikan latar belakang tidak tetap (fixed) di layar kecil */
+    font-size: 55%; /* Ukuran font lebih kecil untuk layar kecil */
+  }
+
+  /* Menyesuaikan tinggi dan lebar menu agar terlihat lebih rapi di HP */
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #243e4ef7;
+    width: 22rem;
+    height: 100vh;
+    transition: right 0.3s ease-in-out; /* Transisi yang lebih halus */
+    width: 18rem; /* Sesuaikan lebar agar lebih proporsional di HP */
+    height: auto; /* Ubah menjadi auto agar menyesuaikan dengan jumlah item */
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 1.8rem; /* Sedikit lebih kecil untuk perangkat HP */
   }
 }

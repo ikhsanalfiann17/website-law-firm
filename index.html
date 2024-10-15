@@ -37,6 +37,7 @@
         <a href="#about">Tentang Kami</a>
         <a href="#layanan">Layanan</a>
         <a href="#contact">Kontak</a>
+        <a href="#" class="btn-konsultasi">Konsultasi</a>
       </div>
 
       <div class="navbar-extra">
@@ -214,6 +215,25 @@
         <p>&copy; 2024 Your Website | Designed by Ikhsan Alfiansyah</p>
       </div>
     </footer>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Modal Konsultasi Form -->
+<div id="konsultasiModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Form Konsultasi</h2>
+    <form id="konsultasiForm" action="konsultasi.php" method="post">
+      <input type="text" name="nik" placeholder="NIK" required />
+      <input type="text" name="nama" placeholder="Nama" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <button type="submit" class="btn">Mulai Konsultasi</button>
+    </form>
+  </div>
+</div>
+
+
 
     <!-- Font Awesome for Icons -->
     <script

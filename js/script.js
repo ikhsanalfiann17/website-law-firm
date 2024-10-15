@@ -59,3 +59,27 @@ function startAutoSlide() {
 
 // Start automatic slide on page load
 document.addEventListener("DOMContentLoaded", startAutoSlide);
+
+// Script for modal
+const modal = document.getElementById("konsultasiModal");
+const btn = document.querySelectorAll(".btn-konsultasi");
+const span = document.getElementsByClassName("close")[0];
+
+// Open the modal when "Konsultasi Hukum" button is clicked
+btn.forEach((button) => {
+  button.onclick = function () {
+    modal.style.display = "block";
+  };
+});
+
+// Close the modal when "x" is clicked
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// Close the modal when clicking outside of it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
